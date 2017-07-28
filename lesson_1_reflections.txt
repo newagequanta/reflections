@@ -1,0 +1,88 @@
+How did viewing a diff between two version of a file help you see the bug that
+was introduced?
+
+    First thoughts:
+        Something was working
+        Something was then changed
+        Something stopped working
+    Analysis:
+        If we can find out WHAT changed, we can study its effect
+        Either it broke the code or it didnt
+        If changes are few, it gets easier
+        If changes are many, a more automated process, diff is needed
+
+How could having easy access to the entire history of a file make you more
+efficient programmer in the long term?
+
+    First thoughts:
+        You are always changing
+        Some changes are good (e.g. more comments)
+        Some changes are bad (e.g. less comments)
+        If you can track and study your changes, you can learn from your own
+        work
+    Analysis:
+        You can always go back and see how many ways you solved a problem
+        What were the pros and cons
+        What features were introduced when
+        If something breaks, you can always roll back
+
+What do you think are the pros and cons of manually choosing when to create a
+commit like you do in Git, vs having version automatically saved, like Google
+Docs does?
+
+    First thoughts:
+        Version control should not be confused with data backup
+        Data backup should be as often as possible without being intrusive
+        Version control however should make logical sense
+    Analysis:
+        An example of the difference would be autosaving an english Paper vs
+        creating two versions of that paper, say with different conclusions and
+        autosaving both
+        Two versions require version control, but autosaving is a form of
+        backup
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file
+separately?
+
+    First thoughts:
+        Horses for courses, both are built with a specific app in mind
+        Google Docs for documents, which are usually not dependent on one
+        another
+        Git for software where there can be high degree of interdependency
+    Analysis:
+        One version change in Git may affect many or multiple files
+        It becomes important to track all the changes/versions simultaneously
+        to make sure the process is not tedious
+        Google Docs on the other hand will have a low degree of correlation
+        Various version of documents can be handled manually
+
+How can you use the commands git log and git diff to view the history of files?
+
+    First thoughts:
+        Better ways of doing this
+        More parsed searching to narrow results
+    Analysis:
+        git log grep=<PATTERN>
+        git show <COMMIT_ID>
+
+How might using version control make you more confident to make changes that
+could break something?
+    
+    First thoughts:
+        Knowing that there exists a failsafe is always reassuring
+    Analysis:
+        If there was no version control, one would always worry about "breaking
+        something"
+        That reduces innovation out of fear
+        With version control, done properly, that no longer remains an issue
+        IF, something does break, you can always revert
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    First thoughts:
+        Everything!!
+    Analysis:
+        Obviously not everything
+        Scripts that have long term viability and implementation potential
+        Bug-Scrub search script comes to mind
