@@ -1,0 +1,18 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+    First thoughts:
+        Git creates the necessary metadata in .git file
+        No commits on the repository yet
+        We need to do it to bring the directory UNDER Git control
+    Analysis:
+        Git gives the user total control on even the first commit
+        E.g. what do you want to put in the description
+
+How is the staging are different from the working directory and the repository?
+What value do you think it offers?
+
+    First thoughts:
+        Not all files will change logically all the time
+        This might provide a way to segregate items that will change
+    Analysis
+        Need to understand more before any analysis
