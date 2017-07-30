@@ -16,3 +16,65 @@ What value do you think it offers?
         This might provide a way to segregate items that will change
     Analysis
         Need to understand more before any analysis
+        Staging area is zone files are moved into right before a commit
+        It can be used to control which files make it into a commit
+        This can be useful when several files are being changed
+        But only one, or two or so files belong in a particular commit not all
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+    First thoughts:
+        Move changed files to the staging are carefully
+    Analysis:
+        As a logical change is made into a file, move it into the staging area
+        Then commit
+        Repeat as needed
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+    First thoughts:
+        Testing new things that make radical changes
+        Structural changes while keeping a working demo copy intact
+    Analysis:
+       Testing new ideas such as features, newer interactive controls, front ends
+        Changing architecture but not sure if changes will be kept
+        Always need a working copy at hand for demos etc. 
+
+How do the diagrams help you visualize the branch structure?
+
+    First thoughts:
+        Obviously because you are looking at something visual vs. a list of items
+    Analysis:
+        I for one found looking at the log without the help of a diagram very onerous
+       The concept of branches and heads only gelled once I viewed the diagram
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+    
+    First thoughts:
+        Git handles this differently than logically a person would
+        Digram would then be slightly different than git log
+    Analysis:
+        Logical diagram makes logical sense, two branches, separating then
+        merging
+        Git log, different story
+        Single branch is the result and the commits from each branch are part
+        of this new branch
+        The commits show up in chronological order
+        This means if git diff is used on two consecutive commits, it may or
+        may not show the changes that actually took place
+        For this info, use git show <COMMIT_ID> instead because that references
+        the REAL parent, branchwise
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+    First thoughts:
+        Keep it as automated as possible without killing logic
+    Analysis:
+        Git automated merging is very cautious
+        It only merges changes that do not break things
+        It leaves to you whatever else needs logical thinking
+        This seems to be a good middle ground
+
