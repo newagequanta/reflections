@@ -1,1 +1,7 @@
 When would you create a remote repository rather than keeping all your work local?
+    First thoughts:
+        Do other people need access to your code?
+        Do you want to share it with the world?
+        Do you want to keep a backup copy that is not dropbox/google drive?
+    Analysis:
+        If the answer to any of the first thougth questions is yes, create a remote
